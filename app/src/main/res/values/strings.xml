@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Components</string>
+    <string name="first_world">first World!</string>
+    <string name="second_world">Second world</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialogactivity">DialogActivity</string>
+    <string name="fragmentactivity">FragmentActivity</string>
+    <string name="secondactivity">SecondActivity</string>
+    <string name="serviceactivity">ServiceActivity</string>
+    <string name="anotheractivity">AnotherActivity</string>
+    <string name="boradcastactivity">BoradcastActivity</string>
+</resources>

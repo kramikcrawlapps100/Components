@@ -1,0 +1,10 @@
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <slide
+        android:duration="400"
+        android:startDelay="50"
+        android:slideEdge="end" />
+    <slide
+        android:duration="400"
+        android:startDelay="50"
+        android:slideEdge="start" />
+</transitionSet>

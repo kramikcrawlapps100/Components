@@ -1,0 +1,35 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/dialog_open"
+        android:title="@string/dialogactivity"
+        android:checkable="false"/>
+    <item
+        android:id="@+id/fragment_open"
+        android:title="@string/fragmentactivity"/>
+
+    <item
+        android:id="@+id/second_open"
+        android:title="@string/secondactivity"
+        android:enabled="false"
+        />
+
+    <item
+        android:id="@+id/service_open"
+        android:title="@string/serviceactivity"
+        app:showAsAction="collapseActionView"
+        />
+
+    <item
+        android:id="@+id/another_open"
+        android:title="@string/anotheractivity"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/broad_open"
+        android:title="@string/boradcastactivity"
+        app:showAsAction="ifRoom"/>
+
+</menu>

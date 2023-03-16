@@ -99,7 +99,6 @@ public class FeedReaderDbHelper extends SQLiteOpenHelper {
 
     @SuppressLint("Range")
     public String getEntry(long id) {
-        // get readable database as we are not inserting anything
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(FeedReaderContract.FeedEntry.TABLE_NAME,
@@ -120,6 +119,17 @@ public class FeedReaderDbHelper extends SQLiteOpenHelper {
         cursor.close();
 
         return title;
+    }
+
+    @SuppressLint("Range")
+    public Cursor getEntryCursor() {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.query(FeedReaderContract.FeedEntry.TABLE_NAME,
+                new String[]{FeedReaderContract.FeedEntry._ID, FeedReaderContract.FeedEntry.COLUMN_NAME_TITLE, FeedReaderContract.FeedEntry.COLUMN_NAME_SUBTITLE},
+                null,
+                null, null, null, null, null);
+        return cursor;
     }
 
     public ArrayList<Person> getPersonList(Person person){

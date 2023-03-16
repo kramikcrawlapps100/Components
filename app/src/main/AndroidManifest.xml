@@ -26,15 +26,27 @@
         android:theme="@style/Theme.Components"
         tools:targetApi="31">
         <activity
-            android:name=".activities.SqliteActivity"
+            android:name=".activities.AdapterActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".activities.PrefActivity"
+            android:name=".activities.ApiCallActivity"
             android:exported="true">
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.ConstraintLayoutActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activities.SqliteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.PrefActivity"
+            android:exported="true" />
         <activity
             android:name=".activities.BroadcastActivity"
             android:exported="false" />
@@ -46,13 +58,7 @@
             android:exported="true" />
         <activity
             android:name=".activities.DialogActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".activities.AnotherActivity"
             android:exported="true"
@@ -63,7 +69,7 @@
         </activity>
         <activity
             android:name=".activities.MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
 
         <service android:name=".services.RingtoneService" />
         <service android:name=".services.FileDownloaderService" />

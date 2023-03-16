@@ -19,7 +19,6 @@ public class AnotherActivity extends AppCompatActivity implements OnCommunicatio
     public static final String SECOND_TAG = "second";
     FirstFragment firstFragment;
     SecondFragment secondFragment;
-
     TextView anotherTextView;
 
     @Override
